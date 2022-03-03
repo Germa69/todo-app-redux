@@ -32,7 +32,6 @@ export default function Filters() {
 
   // Dispatch(action): Nếu action là 1 action creators nên phải thực thi để trả về 1 action object
 
-
   return (
     <Row justify='center'>
       <Col span={24}>
@@ -85,3 +84,4 @@ export default function Filters() {
     </Row>
   );
 }
+

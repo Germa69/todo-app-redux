@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux"
 import { actions } from "../../redux";
 
-
 const priorityColorMapping = {
   High: "red",
   Medium: "blue",

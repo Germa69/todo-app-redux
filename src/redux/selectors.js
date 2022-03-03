@@ -1,5 +1,9 @@
 import { createSelector } from "reselect";
 
+// Việc sử dụng createSelector giúp cải thiện về mặt performance 
+// Nếu như 1 trong dữ liệu không có sự thay đổi thì function tính toán ra không được thực thi lại giúp ghi nhớ lại 
+// useCallback, useMemo giúp ghi nhớ lại được các object nó chỉ bị tính toán lại khi có sự thay đổi của dependencies 
+
 export const searchTextSelector = (state) => state.filters.search;
 export const filterStatusSelector = (state) => state.filters.status;
 export const filterPrioritiesSelector = (state) => state.filters.priorities;

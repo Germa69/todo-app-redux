@@ -14,7 +14,7 @@ const filtersReducer = (state = initState, action) => {
   switch (action.type) {
     case SEARCH_FILTER_CHANGE:
       return {
-        ...state,
+        ...state, // Copy lại state cũ
         search: action.payload, // Override lại
       };
     case STATUS_FILTER_CHANGE:
@@ -33,3 +33,4 @@ const filtersReducer = (state = initState, action) => {
 };
 
 export default filtersReducer;
+
